@@ -22,6 +22,7 @@ CREATE TABLE permission (
 CREATE TABLE role_permission (
     role_id INT NOT NULL,
     permission_id INT NOT NULL,
+    active TINYINT (1) DEFAULT 1,
     PRIMARY KEY (role_id, permission_id)
 );
 
