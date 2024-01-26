@@ -37,7 +37,7 @@ class EmployeeRoleResource extends Resource
                     ->options(Permission::all()->pluck('name', 'id'))
                     ->searchable()
                     ->nullable()
-                    ->help('Selecciona un permiso para este rol.'),
+                    ->helperText('Selecciona un permiso para este rol.'),
             ]);
     }
 
